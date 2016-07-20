@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="<?= $redirect->getUrl(array('css/')); ?>bootstrap-theme.css">
 </head>
 <body>
-
+<h1>Hello, world!</h1>
 <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
 <script src="<?= $redirect->getUrl(array('js/')); ?>bootstrap.js"></script>
 <script src="<?= $redirect->getUrl(array('js/')); ?>paypal.js"></script>
