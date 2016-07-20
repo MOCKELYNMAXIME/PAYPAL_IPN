@@ -25,6 +25,14 @@
                         </div>
                         <div class="col-md-4"></div>
                     </div>
+                    <form id="form-simple-payment" class="form-horizontal" action="<?= $redirect->racine(); ?>/controller/paypal.php">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">Libelle de l'article <span class="required">*</span></label>
+                            <div class="col-md-9">
+                                <input type="text" id="libelle_article" class="form-control" name="libelle_article" required>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
