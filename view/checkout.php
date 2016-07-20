@@ -42,7 +42,7 @@
                         <div class="row">
                             <div class="col-md-3 col-md-offset-9">
                                 <input type="hidden" id="act-simple-payment" name="action" value="simple-payment">
-                                <button type="submit" id="btn-simple-payment" class="btn btn-success">Valider</button>
+                                <button type="submit" id="btn-simple-payment" class="btn btn-success btn-block">Valider</button>
                             </div>
                         </div>
                     </form>
