@@ -27,9 +27,9 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li <?php if(isset($_GET['view']) && $_GET['view'] == 'index'){echo 'class="active"';} ?>><a href="index.php?view=index">Accueil</a></li>
+                <li <?php if(isset($_GET['view']) && $_GET['view'] == 'checkout'){echo 'class="active"';} ?>><a href="index.php?view=checkout">Effectuer Un Paiement</a></li>
+                <li <?php if(isset($_GET['view']) && $_GET['view'] == 'stat'){echo 'class="active"';} ?>><a href="index.php?view=stat">Statistique</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
