@@ -32,11 +32,20 @@
                                 <input type="text" id="libelle_article" class="form-control" name="libelle_article" required>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3">Total TTC <span class="required">*</span></label>
+                            <div class="col-md-5">
+                                <input type="text" id="total_ttc" class="form-control" name="total_ttc" required>
+                                <p class="text-muted">Format: 0.00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-md-offset-9">
+                                <input type="hidden" id="act-simple-payment" name="action" value="simple-payment">
+                                <button type="submit" id="btn-simple-payment" class="btn btn-success">Valider</button>
+                            </div>
+                        </div>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
