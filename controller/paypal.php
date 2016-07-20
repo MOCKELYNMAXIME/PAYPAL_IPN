@@ -1,5 +1,5 @@
 <?php
-use App\Paypal\Paypal;
+use App\Api\Paypal;
 
 require_once "../app/classe.php";
 if($ajax->is_ajax()){
