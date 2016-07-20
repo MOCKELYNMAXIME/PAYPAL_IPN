@@ -9,6 +9,9 @@
                 <button type="button" class="btn btn-lg btn-block btn-primary" data-toggle="modal" data-target="#multiple-payment">Effectuer un paiement en plusieurs fois</button>
             </div>
         </div>
+        <pre id="payment-error">
+
+        </pre>
     </div>
     <div class="modal fade" id="simple-payment" tabindex="-1" role="dialog">
         <div class="modal-dialog">
