@@ -64,4 +64,8 @@ class redirect extends constante
         return $this->HTTP.$this->URL;
     }
 
+    public function getIcon($folder, $icon, $ext){
+        return $this->getUrl(array('images', 'icons/')).$folder.'/'.$icon.'.'.$ext;
+    }
+
 }
