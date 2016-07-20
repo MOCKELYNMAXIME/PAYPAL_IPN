@@ -21,7 +21,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Project name</a>
+            <a class="navbar-brand" href="#">
+                <img src="<?= $redirect->getUrl(array('images', 'logo/')); ?>logo.png" class="img-responsive">
+            </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
