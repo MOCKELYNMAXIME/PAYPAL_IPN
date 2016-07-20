@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="<?= $redirect->getUrl(array('css/')); ?>bootstrap.css">
     <link rel="stylesheet" href="<?= $redirect->getUrl(array('css/')); ?>bootstrap-theme.css">
     <link rel="stylesheet" href="<?= $redirect->getUrl(array('css/')); ?>starter-template.css">
+    <link rel="stylesheet" href="<?= $redirect->getUrl(array('css/')); ?>toastr.css">
 </head>
 <body>
 
@@ -48,5 +49,21 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
 <script src="<?= $redirect->getUrl(array('js/')); ?>bootstrap.js"></script>
 <script src="<?= $redirect->getUrl(array('js/')); ?>paypal.js"></script>
+<script src="<?= $redirect->getUrl(array('js/')); ?>toastr.js"></script>
+<?php if(isset($_GET['success']) && $_GET['success'] == $_GET['success']): ?>
+    <script type="text/javascript">
+        toastr.success(<?= $_GET['success']; ?>, 'SUCCES');
+    </script>
+<?php endif; ?>
+<?php if(isset($_GET['warning']) && $_GET['warning'] == $_GET['warning']): ?>
+    <script type="text/javascript">
+        toastr.warning(<?= $_GET['warning']; ?>, 'ATTENTION');
+    </script>
+<?php endif; ?>
+<?php if(isset($_GET['error']) && $_GET['error'] == $_GET['error']): ?>
+    <script type="text/javascript">
+        toastr.error(<?= $_GET['error']; ?>, 'ERREUR');
+    </script>
+<?php endif; ?>
 </body>
 </html>
