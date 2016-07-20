@@ -35,7 +35,11 @@
     </div>
 </nav>
 <div class="container">
-
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Test</h2>
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
