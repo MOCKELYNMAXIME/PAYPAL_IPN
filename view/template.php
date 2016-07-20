@@ -45,7 +45,7 @@
 </div>
 <?= $content; ?>
 
-<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
 <script src="<?= $redirect->getUrl(array('js/')); ?>bootstrap.js"></script>
 <script src="<?= $redirect->getUrl(array('js/')); ?>paypal.js"></script>
 </body>
