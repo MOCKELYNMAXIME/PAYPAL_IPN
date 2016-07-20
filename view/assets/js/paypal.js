@@ -1,4 +1,5 @@
 (function($){
+    $("#payment-error").hide();
     $("#form-simple-payment").on('submit', function(e){
         e.preventDefault();
         var form = $(this);
@@ -14,7 +15,7 @@
             })
             .fail(function(jqxhr){
                 $("#simple-payment").modal('hide');
-                $("#payment-error").hide().html(jqxhr.responseText);
+                $("#payment-error").show().html(jqxhr.responseText);
             })
             .always(function(){
                 btn.html('Valider');
