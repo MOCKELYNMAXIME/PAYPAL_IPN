@@ -34,6 +34,15 @@
         </div><!--/.nav-collapse -->
     </div>
 </nav>
+<div class="container clearfix">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <img src="<?= $redirect->getUrl(array('images', 'logo/')); ?>logo_grd.png" alt="">
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
 <?= $content; ?>
 
 <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
