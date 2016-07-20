@@ -22,7 +22,7 @@ if($ajax->is_ajax()){
         );
         $reponse = $paypal->request('SetExpressCheckout', $params);
         if($reponse){
-            echo json_encode($reponse['TOKEN']);
+            echo $reponse['TOKEN'];
         }else{
             echo json_encode($paypal->error);
             die('ERREUR');
