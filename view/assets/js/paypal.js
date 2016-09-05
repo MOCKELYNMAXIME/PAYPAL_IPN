@@ -11,7 +11,7 @@
 
         $.post(url, form.serializeArray())
             .done(function(data){
-                window.location='https://www.sandbox.paypal.com/webscr?cmd=_express-checkout&useraction=commit&token='+data;
+                window.location='https://www.paypal.com/webscr?cmd=_express-checkout&useraction=commit&token='+data;
             })
             .fail(function(jqxhr){
                 $("#simple-payment").modal('hide');
