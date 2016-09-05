@@ -11,10 +11,10 @@ namespace App\Api;
 
 class Paypal
 {
-    private $user       = "mmockelyn-facilitator_api1.gmail.com";
-    private $pwd        = "35PH4JEHJ5UUM8WR";
-    private $signature  = "AiDxRCYK2QPYGe9tz7Hyx7Gw7dBaAw-B0QVQZPS8X50cWuAvSJuXAoXJ";
-    private $endpoint   = "https://api-3t.sandbox.paypal.com/nvp";
+    private $user       = "mmockelyn_api1.gmail.com";
+    private $pwd        = "A44KXXUM24326LAN";
+    private $signature  = "AiPC9BjkCyDFQXbSkoZcgqH3hpacApul-VGB2.PregA0EgvJle8s2fji";
+    private $endpoint   = "https://api-3t.paypal.com/nvp";
     public $error       = array();
 
     public function __construct($user = false, $pwd = false, $signature = false, $prod = false)

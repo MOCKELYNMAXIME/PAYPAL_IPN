@@ -7,6 +7,13 @@ if($ajax->is_ajax()){
         $libelle_article = $_POST['libelle_article'];
         $total_ttc = $_POST['total_ttc'];
 
+        $sql = $db->getDatabase("execute", "INSERT INTO achat_unitaire(libelle_article, total_ttc) VALUES (:libelle_article, :total_ttc)", array(
+            "libelle_article"   => $libelle_article,
+            "total_ttc"         => $total_ttc
+        ));
+        $sql_accept = $db->getDatabase("query", "SELECT * FROM achat_unitaire ORDER BY id DESC LIMIT 1");
+        $accept = $sql_accept[0];
+
         $paypal = new Paypal();
         $params = array(
             "RETURNURL"     => $redirect->racine().'/controller/paypal.php?action=payment_transfer',
@@ -19,6 +26,7 @@ if($ajax->is_ajax()){
 
             "LOGOIMG"                       => $redirect->getUrl(array("images", "logo/")).'logo.png',
             "BRANDNAME"                     => "LA MEGISSERIE",
+            "PAYMENTREQUEST_0_INVNUM"       => $accept->id
         );
         $reponse = $paypal->request('SetExpressCheckout', $params);
         if($reponse){
